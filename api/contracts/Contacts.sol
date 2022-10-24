@@ -10,7 +10,7 @@ contract Contacts {
     string phone;
   }
 
-  constructor() public {
+  constructor() {
     createContact('Zafar Saleem', '123123123');
   }
 
