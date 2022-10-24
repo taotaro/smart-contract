@@ -1,0 +1,23 @@
+{
+  "name": "smart-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/taotaro/smart-contract.git"
+  },
+  "author": "tamara <tamarayustian@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/taotaro/smart-contract/issues"
+  },
+  "homepage": "https://github.com/taotaro/smart-contract#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
