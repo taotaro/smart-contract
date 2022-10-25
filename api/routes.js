@@ -1,4 +1,4 @@
-function routes(app, contactList) {
+function routes(app, db, accounts, contactList) {
   app.get("/contacts", async (request, response) => {
     let cache = [];
     const COUNTER = await contactList.methods.count().call();

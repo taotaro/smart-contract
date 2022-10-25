@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@truffle/contract': ^4.4.1
   cors: ^2.8.5
+  dotenv: ^16.0.3
   express: ^4.17.2
   mongodb: ^4.2.2
   nodemon: ^2.0.15
@@ -11,6 +12,7 @@ specifiers:
 dependencies:
   '@truffle/contract': 4.6.4
   cors: 2.8.5
+  dotenv: 16.0.3
   express: 4.18.2
   mongodb: 4.11.0
   nodemon: 2.0.20
@@ -2192,6 +2194,11 @@ packages:
     resolution: {integrity: sha512-HnM6ZlFqcajLsyudHq7LeeLDr2rFAVYtDv/hV5qchQEidSck8j9OPUsXY9KwJv/lHMtYlX4DjRQqwFYa+0r8Ug==}
     dependencies:
       no-case: 2.3.2
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /duplexer3/0.1.5:
