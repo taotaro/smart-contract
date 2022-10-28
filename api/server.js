@@ -4,9 +4,9 @@ const Web3 = require("web3");
 const mongodb = require("mongodb").MongoClient;
 const contract = require("@truffle/contract");
 const artifacts = require("./build/contracts/Contacts.json");
+const artifacts_escrow = require("./build/contracts/Escrow.json");
 const routes = require("./routes");
-const CONTACT_ABI = require("./config");
-const CONTACT_ADDRESS = require("./config");
+const { CONTACT_ABI, CONTACT_ADDRESS, ESCROW_ABI } = require("./config");
 require("dotenv").config();
 
 const app = express();
@@ -31,6 +31,7 @@ mongodb.connect(
       CONTACT_ABI.CONTACT_ABI,
       CONTACT_ADDRESS.CONTACT_ADDRESS
     );
+    const escrowList = new web3.eth.Contract(ESCROW_ABI.ESCROW_ABI);
 
     routes(app, db, accounts, contactList);
     app.listen(process.env.PORT || 3001, () => {
